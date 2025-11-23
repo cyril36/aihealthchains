@@ -1,0 +1,18 @@
+# ---- Base Build Image ----
+FROM node:20-alpine AS build
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm install --production
+
+COPY . .
+
+# ---- Runtime Image ----
+FROM node:18-alpine
+
+WORKDIR /app
+COPY --from=build /app ./
+
+EXPOSE 3000
+
+CMD ["npm", "start"]
