@@ -12,6 +12,16 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --rs-primary-50: #edfffe;
+  --rs-primary-100: #c5edec;
+  --rs-primary-200: #9ed9d8;
+  --rs-primary-300: #7dc7c7;
+  --rs-primary-400: #5fb1b3;
+  --rs-primary-500: #459ea1;
+  --rs-primary-600: #32969c;
+  --rs-primary-700: #1f8a91;
+  --rs-primary-800: #0d7882;
+  --rs-primary-900: #00636e;
 }
 
 a {

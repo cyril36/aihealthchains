@@ -93,7 +93,7 @@ export function PatientModal({ open, onClose, patient, mode }) {
           </Form.Group>
           <Form.Group>
             <Form.Label>Age</Form.Label>
-            <Form.Control name="age" type="number" />
+            <Form.Control name="age" type="number" min={1} />
           </Form.Group>
           <Form.Group>
             <Form.Label>Gender</Form.Label>
