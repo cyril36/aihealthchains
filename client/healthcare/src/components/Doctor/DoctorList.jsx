@@ -96,15 +96,15 @@ export function DoctorList({
       </div>
       <div style={{ flex: 1, overflowY: "auto", padding: "0 24px" }}>
         <List hover>
-          {paginatedDoctors.map((p) => (
+          {paginatedDoctors.map((p) =>{console.log(p.id);console.log( selectedDoctorId); console.log( selectedDoctorId == p.id );return (
             <List.Item
               key={p.id}
               style={{
                 cursor: "pointer",
                 background:
-                  selectedDoctorId === p.id ? "hsl(0, 0%, 98%)" : "white",
+                  selectedDoctorId == p.id ? "hsl(0, 0%, 98%)" : "white",
                 border:
-                  selectedDoctorId === p.id
+                  selectedDoctorId == p.id
                     ? "2px solid hsl(182, 40%, 45%)"
                     : "2px solid hsl(210, 10%, 80%)",
                 borderRadius: "8px",
@@ -125,7 +125,7 @@ export function DoctorList({
                 {p.specialty}
               </Tag>
             </List.Item>
-          ))}
+          )})}
         </List>
       </div>
       {totalPages > 1 && (

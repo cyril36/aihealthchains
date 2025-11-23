@@ -106,9 +106,9 @@ export function PatientList({
               style={{
                 cursor: "pointer",
                 background:
-                  selectedPatientId === p.id ? "hsl(0, 0%, 98%)" : "white",
+                  selectedPatientId == p.id ? "hsl(0, 0%, 98%)" : "white",
                 border:
-                  selectedPatientId === p.id
+                  selectedPatientId == p.id
                     ? "2px solid hsl(182, 40%, 45%)"
                     : "2px solid hsl(210, 10%, 80%)",
                 borderRadius: "8px",

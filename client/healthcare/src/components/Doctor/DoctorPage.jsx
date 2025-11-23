@@ -21,7 +21,6 @@ export function DoctorsPage() {
     "doctorId"
   );
 
-  const queryClient = useQueryClient();
 
   const { data: doctors, isLoading, error, isError } = useDoctors();
 

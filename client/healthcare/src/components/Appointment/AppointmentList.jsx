@@ -132,11 +132,11 @@ export function AppointmentsList({
                 style={{
                   cursor: "pointer",
                   background:
-                    selectedAppointment?.id === apt.id
+                    selectedAppointment?.id == apt.id
                       ? "hsl(0, 0%, 98%)"
                       : "white",
                   border:
-                    selectedAppointment?.id === apt.id
+                    selectedAppointment?.id == apt.id
                       ? "2px solid hsl(182, 40%, 45%)"
                       : "2px solid hsl(210, 10%, 80%)",
                   borderRadius: "8px",
