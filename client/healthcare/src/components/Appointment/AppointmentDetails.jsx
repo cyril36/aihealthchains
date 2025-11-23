@@ -14,6 +14,7 @@ import EditIcon from "@rsuite/icons/Edit";
 import TrashIcon from "@rsuite/icons/Trash";
 import { deleteAppointment } from "../../api/appointments";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { useRouter } from "../../context/Router";
 
 const AppointmentsDetails = ({
   appointment,
