@@ -96,7 +96,7 @@ export function DoctorList({
       </div>
       <div style={{ flex: 1, overflowY: "auto", padding: "0 24px" }}>
         <List hover>
-          {paginatedDoctors.map((p) =>{console.log(p.id);console.log( selectedDoctorId); console.log( selectedDoctorId == p.id );return (
+          {paginatedDoctors.map((p) => (
             <List.Item
               key={p.id}
               style={{
@@ -125,7 +125,7 @@ export function DoctorList({
                 {p.specialty}
               </Tag>
             </List.Item>
-          )})}
+          ))}
         </List>
       </div>
       {totalPages > 1 && (
@@ -137,7 +137,8 @@ export function DoctorList({
             next
             size="md"
             ellipsis
-            maxButtons={2} boundaryLinks
+            maxButtons={2}
+            boundaryLinks
             total={filteredDoctors.length}
             limit={doctorsPerPage}
             activePage={currentPage}
