@@ -130,7 +130,7 @@ const AppointmentsDetails = ({
                   Date
                 </div>
                 <div style={{ fontSize: "1.125rem", fontWeight: 600 }}>
-                  {appointment.dateTime} years
+                  {appointment.dateTime}
                 </div>
               </Col>
             </Row>
